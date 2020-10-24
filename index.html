@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой список</title>
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+
+<body>
+    <header class="main-header page-container">
+        <h1 class="main-title">Мой список</h1>
+    </header>
+    <main>
+        <section class="add__container page-container">
+            <form class="add__form">
+                <input type="text" class="add__input" autofocus placeholder="Введите название">
+                <button type="button" class="add__btn">
+                    <span class="visually-hidden">Добавить</span>
+                </button>
+            </form>
+        </section>
+        <section class="list__container page-container">
+            <ul class="list__body">
+            </ul>
+            <p class="list__count">Количество:
+                <output class="count-output">0</output>
+            </p>
+            <button class="list__clear-btn">Очистить список</button>
+        </section>
+    </main>
+    <div class="modal__wrapper">
+        <div class="modal">
+            <div class="modal__content">
+                <p class="modal__text">Вы уверены?</p>
+                <div class="modal__btns-wrapper">
+                    <button type="button" class="modal__btn modal__btn--yes">Да</button>
+                    <button type="button" class="modal__btn modal__btn--no">Нет</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="build/js/script.js"></script>
+</body>
+
+</html>
